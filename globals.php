@@ -29,21 +29,7 @@ function getMatchID($url){
 	return $match_id;
 }
 
-function getCsrfToken($cookie){
-	if($cookie != NULL){
-		$csrf_token1 = explode("csrftoken=", $cookie);
-		$csrf_token2 = $csrf_token1[1];
-		$csrf_token3 = explode(";", $csrf_token2);
-		$csrftoken = $csrf_token3[0];
-		return $csrftoken;
-	}
-	else{
-		echo "File cookie.txt tidak tersedia!";
-		return;
-	}
-}
-
-function scrapeProductToJSON($cookie, $csrftoken, $match_id){
+function scrapeProductToJSON($match_id){
 	//Var count untuk menambahkan jumlah products pada "newest" di url tujuan dibawah ini
 	$count = 0;
 
