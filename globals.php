@@ -52,6 +52,12 @@ function scrapeProductToJSON($cookie, $csrftoken, $match_id){
 
 	//Jumlah produk per page (dapat diganti manual)
 	//$productsCount = 60;
+	
+	//Make folder for json
+	$dir = "json_file";
+	if(is_dir($dir) === false){
+		mkdir($dir);
+	}	
 
 	for($a = 0; $a<$page; $a++){
 		$url = "https://shopee.co.id/api/v4/search/search_items?by=price&limit=60&match_id=$match_id&newest=$count&order=desc&page_type=collection&scenario=PAGE_COLLECTION_SEARCH&version=2";
@@ -84,7 +90,7 @@ function scrapeProductToJSON($cookie, $csrftoken, $match_id){
 
 		$json = json_encode(array('data' => $data_json), JSON_PRETTY_PRINT);
 
-		file_put_contents("json_file/data$a.json", $json);
+		file_put_contents("$dir/data$a.json", $json);
 
 		echo "Sukses membuat file json pada page ke $a\n";
 	}
