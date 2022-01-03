@@ -1,5 +1,5 @@
 # scrape-shopee-events
-Scrape data products (checkout serba seribu event) at shopee.co.id (Shopee Indonesia)
+Scrape data products (checkout serba seribu event) at shopee.co.id (Shopee Indonesia)<br>
 Alasan buat program ini : karena sortir harga tertinggi ke terendah pada produk collection shopee (terutama produk checkout 1k) terkadang ngebug dan tidak dapat tersortir dengan benar.
 
 <h3>Requirements</h3>	
