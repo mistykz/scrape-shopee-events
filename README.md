@@ -6,4 +6,4 @@ Alasan buat program ini : karena sortir harga tertinggi ke terendah pada produk 
 Use PHP 7.4 or higher.
 
 <h3>Run</h3>	
-`php scrape.php`
+<code>php scrape.php</code>	
