@@ -1,13 +1,12 @@
 <?php
 
 function clearScreen(){
-    if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-        $clr = system('cls');
+    if (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN') {
+        return system('cls');
     }
     else{
-        $clr = system('clear');
+        return system('clear');
     }
-    return $clr;
 }
 
 function curlGet($url, $head){
