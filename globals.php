@@ -58,7 +58,7 @@ function scrapeProductToJSON($match_id){
 	    	'content-type: application/json',
 	    	"x-csrftoken: $csrftoken",
 	    	'origin: https://shopee.co.id',
-	    	'referer: https://shopee.co.id/collections/994861?order=desc&page=8&sortBy=price',
+	    	'referer: https://shopee.co.id/collections/$match_id?order=desc&page=8&sortBy=price',
 	    	"cookie: $cookie"
 	    );
 
