@@ -30,7 +30,7 @@ function getCsrfToken($cookie){
 		return $csrftoken;
 	}
 	else{
-		echo "File cookie.txt tidak tersedia!";
+		echo "File cookie.txt tidak tersedia!\n";
 		return;
 	}
 }
