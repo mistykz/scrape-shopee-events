@@ -8,7 +8,7 @@ clearScreen();
 $cookie = file_get_contents("cookieAccount.txt");
 $csrftoken = getCsrfToken($cookie);
 if ($cookie == NULL){
-    echo "Tidak ada file cookieAccount.txt!";
+    echo "Tidak ada file cookieAccount.txt!\n";
     exit(0);
 }
 //echo $cookie;
