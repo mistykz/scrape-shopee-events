@@ -7,10 +7,10 @@
 <br>Alasan buat program ini : karena sortir harga tertinggi ke terendah pada produk collection shopee (terutama produk checkout 1k) terkadang ngebug dan tidak dapat tersortir dengan benar. Maka dari itu saya scrape terlebih dahulu produk-produknya, lalu saya sort sendiri pada xslx (rubah file csv ke xslx terlebih dahulu ya).</br>
     
 <h3>Requirements</h3>	
-<ls>Use PHP 7.4 or higher.</ls>
+<li>Use PHP 7.4 or higher.</li>
 
 <h3>Run</h3>
-<ls>Isi terlebih dahulu cookie akun shopee anda pada file <code>cookieAccount.txt</code></ls>
-<ls>Run pada cmd/semacamnya dengan command <code>php scrape.php</code></ls>
+<li>Isi terlebih dahulu cookie akun shopee anda pada file <code>cookieAccount.txt</code></li>
+<li>Run pada cmd/semacamnya dengan command <code>php scrape.php</code></li>
 
-</ps>
+</p>
