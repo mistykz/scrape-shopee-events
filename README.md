@@ -9,6 +9,8 @@
     
 <h3>Requirements</h3>	
 <li>Use PHP 7.4 or higher.</li>
+<li>Use Python 3.7.0 or higher.</li>
+<li>Install library python <code>pip install pandas</code></li>
 
 <h3>Run</h3>
 <li>Isi terlebih dahulu cookie akun shopee anda pada file <code>cookieAccount.txt</code></li>
